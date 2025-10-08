@@ -1,0 +1,78 @@
+/* Inheritance: body font + base size */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 1rem;
+  color: #222;
+  background: #ffffff;
+}
+
+/* Header and footer share a background color */
+header, footer {
+  background-color: #eef2f3;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Class selector for the site title */
+.site-title {
+  color: #2b3a42;
+  margin: 0;
+}
+
+/* ID selector for the image box-shadow (0 horizontal, 0 vertical, 2px blur, 1px spread, black) */
+#my-image {
+  box-shadow: 0 0 2px 1px black;
+  max-width: 240px;
+  display: block;
+  margin: 0.75rem auto;
+}
+
+/* Hobbies list: squares and nth-child odd background */
+ul.hobbies {
+  list-style-type: square;
+  padding-left: 1.2rem;
+  max-width: 700px;
+}
+ul.hobbies li {
+  padding: 0.35rem 0.5rem;
+}
+ul.hobbies li:nth-child(odd) {
+  background-color: #f7f9fa;
+}
+
+/* Navigation: remove bullets, remove underline, style links */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+nav li {
+  margin: 0;
+}
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #74b9ff;
+  border: 1px solid #0984e3;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+}
+nav a:hover,
+nav a:focus {
+  background-color: #0984e3;
+  outline: 3px solid rgba(9,132,227,0.15);
+  outline-offset: 2px;
+}
+
+/* Small responsive adjustments */
+@media (min-width: 600px) {
+  body { max-width: 900px; margin: 1.25rem auto; }
+}

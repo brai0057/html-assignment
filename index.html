@@ -4,23 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Wesley Braide</h1>
+    <!-- Added class for site title -->
+    <h1 class="site-title">Wesley Braide</h1>
+
     <!-- Navigation -->
     <nav>
-      <a href="index.html">Home</a> |
-      <a href="notes.html">Notes</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="notes.html">Notes</a></li>
+      </ul>
     </nav>
   </header>
 
-  <img src="images/me.jpg" alt="Photo of me" width="250">
+  <!-- Added ID for image -->
+  <img id="my-image" src="images/me.jpg" alt="Photo of me" width="250">
 
   <article>
     <h2>About Me</h2>
     <p>
-      I am a student at Algonquin College, learning web development and design. I enjoy working on creative projects mainly things like video editing or photoshop. I am especially interested in video editing as editing things like music videos always seemed cool to me and gives alot of freedom to make what you want. This is my 1<sup>st</sup> year of exploring digital tools, and I am excited for what’s next.
+      I am a student at <abbr title="Algonquin College">AC</abbr>, learning web development and design. I enjoy working on creative projects mainly things like <em>video editing</em> or photoshop. I am especially interested in video editing as editing things like music videos always seemed cool to me and gives alot of freedom to make what you want. This is my 1<sup>st</sup> year of exploring digital tools, and I am excited for what’s next.
     </p>
 
     <p>
@@ -29,13 +36,15 @@
   </article>
 
   <h3>My Hobbies</h3>
-  <ul>
-    <li>Editing videos </li>
+  <!-- Added class for styling -->
+  <ul class="hobbies">
+    <li>Editing videos</li>
     <li>Playing Games</li>
   </ul>
 
   <blockquote>
-    "The only way to do great work is to love what you do." – Steve Jobs
+    "The only way to do great work is to love what you do." 
+    <cite>– Steve Jobs</cite>
   </blockquote>
 
   <footer>
